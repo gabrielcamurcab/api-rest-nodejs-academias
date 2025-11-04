@@ -9,7 +9,9 @@
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   "homepage": "https://github.com/gabrielcamurcab/api-rest-nodejs-academias#readme",
   "devDependencies": {
     "@types/node": "24.9.2",
+    "@vitest/coverage-v8": "4.0.7",
+    "@vitest/ui": "4.0.7",
     "prisma": "6.18.0",
     "tsup": "8.5.0",
     "tsx": "4.20.6",
